@@ -1,0 +1,22 @@
+diff --git a/augene-player/Source/MainComponent.cpp b/augene-player/Source/MainComponent.cpp
+index bf9ca64..d06ff75 100644
+--- a/augene-player/Source/MainComponent.cpp
++++ b/augene-player/Source/MainComponent.cpp
+@@ -16,8 +16,6 @@
+ namespace juce {
+     extern JNIEnv *getEnv() noexcept;
+ }
+-#else
+-#include "jlv2_host/jlv2_host.h"
+ #endif
+ 
+ //==============================================================================
+@@ -101,8 +99,6 @@ MainComponent::MainComponent()
+     aap::getPluginHostPAL()->setPluginListCache(aap::getPluginHostPAL()->getInstalledPlugins());
+     auto format = new juceaap::AndroidAudioPluginFormat();
+     formatManager.addFormat (format);
+-#else
+-    formatManager.addFormat (new jlv2::LV2PluginFormat());
+ #endif
+     // Show the plugin scan dialog
+     // If you're loading an Edit with plugins in, you'll need to perform a scan first
