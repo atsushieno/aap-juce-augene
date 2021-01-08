@@ -32,6 +32,7 @@ jobs:
         echo y | sudo apt-get install xvfb wget unzip libc6 \
                  libcurl3-gnutls-dev  libfreetype6-dev libgcc1 libjpeg-dev \
                  libpng-dev libstdc++6 libwebkit2gtk-4.0-dev libx11-6 \
+                  libxcomposite-dev libxcursor-dev libxinerama-dev libxrandr-dev \
                  libxext6 zlib1g  make g++ mesa-common-dev libasound2-dev \
                  libjack-jackd2-dev ladspa-sdk \
                  doxygen libgrpc++-dev libgrpc-dev \
