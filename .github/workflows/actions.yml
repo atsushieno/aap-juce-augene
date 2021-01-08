@@ -30,7 +30,7 @@ jobs:
     - name: apt install
       run: |
         echo y | sudo apt-get install xvfb wget unzip libc6 \
-                 libcurl3-gnutls-dev  libfreetype6-dev libgcc1 libjpeg-dev \
+                 libcurl3-gnutls-dev libfreetype-dev libfreetype6-dev libgcc1 libjpeg-dev \
                  libpng-dev libstdc++6 libwebkit2gtk-4.0-dev libx11-6 \
                   libxcomposite-dev libxcursor-dev libxinerama-dev libxrandr-dev freeglut3-dev \
                  libxext6 zlib1g  make g++ mesa-common-dev libasound2-dev \
